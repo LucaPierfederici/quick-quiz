@@ -16,13 +16,12 @@ html, body {
 
 .quiz-answers {
   text-align: center;
-  width: 250px;
+  width: 100%;
   margin: 0 auto;
   display: block;
   padding-bottom: 5px;
 }
 .quiz-answers .btn{
-  float: left;
   clear: both;
 }
 
@@ -32,13 +31,14 @@ html, body {
     font-weight: 400;
 }
 .quiz-button.btn {
-  margin-top: 10px;
+  margin: 15px auto;
   background-color: #ddd;
   border-radius: 0;
   text-transform: uppercase;
   white-space: normal !important;
-  max-width: 250px;
-  width: 250px;
+  max-width: 500px;
+  width: 100%;
+  display: block;
 }
 
 .quiz-button.btn:hover {
