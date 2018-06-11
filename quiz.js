@@ -25,7 +25,7 @@ function render(quiz_opts) {
 
   // list of questions to insert into quiz
   var questions = quiz_opts.questions;
-  questions = getRandom(questions, 89);
+  // questions = getRandom(questions, 89);
   
   // keep track of the state of correct
   // answers to the quiz so far
