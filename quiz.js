@@ -205,6 +205,7 @@ var $indicators = $('<ol>')
           // if correct answer is selected,
           // keep track in total
           if (correct) state.correct++;
+          $quiz.carousel()
           $quiz.carousel('next');
 
           // if we've reached the final question
@@ -214,7 +215,7 @@ var $indicators = $('<ol>')
             $results_ratio.text(
               "Hai ottenuto " +
               Math.round(100*(state.correct/state.total)) +
-              "% delle risposte corrette!"
+              `% delle risposte corrette! (${state.correct}/${state.total})`
             );
             $twitter_link.attr('href', tweet(state, quiz_opts));
             $facebook_link.attr('href', facebook(state, quiz_opts));
