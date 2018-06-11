@@ -183,8 +183,8 @@ var $indicators = $('<ol>')
           title: "Errata",
           text: (
             "Hai sbagliato!<br/><br/>" +
-            "Ea risposta corretta era \"" +
-            question.answers[question.correct.index] + "\"." + (
+            "La risposta corretta era \"<strong>" +
+            question.answers[question.correct.index] + "</strong>\"." + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
               question.correct.text +
