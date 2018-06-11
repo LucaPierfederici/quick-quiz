@@ -1,7 +1,7 @@
 /*
   Quick quiz bootstrap extension
 */
-
+var _ = require('https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js');
 ;(function($) {
 
 // keep track of number of quizes added to page
@@ -26,7 +26,7 @@ function render(quiz_opts) {
 
   // list of questions to insert into quiz
   var questions = quiz_opts.questions;
-  console.log(lodash.sampleSize(questions, 40));
+  console.log(_.sampleSize(questions, 40));
   // keep track of the state of correct
   // answers to the quiz so far
   var state = {
