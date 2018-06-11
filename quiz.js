@@ -81,7 +81,7 @@ var $indicators = $('<ol>')
 
   $("<button>")
     .attr('class', 'quiz-button btn')
-    .text("Take the quiz!")
+    .text("Inizia il quiz!")
     .click(function() {
       $quiz.carousel('next');
       $indicators.addClass('show');
@@ -160,7 +160,7 @@ var $indicators = $('<ol>')
       var opts = {
         allowOutsideClick : false,
         allowEscapeKey : false,
-        confirmButtonText: "Next Question",
+        confirmButtonText: "Domanda successiva",
         html : true,
         confirmButtonColor: "#0096D2"
       };
@@ -196,7 +196,7 @@ var $indicators = $('<ol>')
       }
 
       if (last_question) {
-        opts.confirmButtonText = "See your results";
+        opts.confirmButtonText = "Vedi i risultati";
       }
 
       // bind click event to answer button,
@@ -214,9 +214,9 @@ var $indicators = $('<ol>')
           if (last_question) {
             $results_title.html(resultsText(state));
             $results_ratio.text(
-              "You got " +
+              "Hai ottenuto " +
               Math.round(100*(state.correct/state.total)) +
-              "% of the questions correct!"
+              "% delle risposte corrette!"
             );
             $twitter_link.attr('href', tweet(state, quiz_opts));
             $facebook_link.attr('href', facebook(state, quiz_opts));
