@@ -25,6 +25,7 @@ function render(quiz_opts) {
 
   // list of questions to insert into quiz
   var questions = quiz_opts.questions;
+  var oldDate = new Date();
   // questions = getRandom(questions, 89);
   
   // keep track of the state of correct
@@ -211,11 +212,14 @@ var $indicators = $('<ol>')
           // if we've reached the final question
           // set the results text
           if (last_question) {
+            var newDate = new Date();
+            var spent = newDate - oldDate;
             $results_title.html(resultsText(state));
             $results_ratio.text(
               "Hai ottenuto " +
               Math.round(100*(state.correct/state.total)) +
-              `% delle risposte corrette! (${state.correct}/${state.total})`
+              `% delle risposte corrette! (${state.correct}/${state.total})` +
+              `Tempo speso: ${spent%60}m ${spent - 60 * spent%60}s`
             );
             $twitter_link.attr('href', tweet(state, quiz_opts));
             $facebook_link.attr('href', facebook(state, quiz_opts));
