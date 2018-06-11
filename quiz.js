@@ -88,9 +88,7 @@ var $indicators = $('<ol>')
 
     $(".active .quiz-button.btn").each(function(){
       console.log(this.getBoundingClientRect())
-      $(this).css("margin-left", function(){
-        return ((250 - this.getBoundingClientRect().width) *0.5) + "px"
-      })
+      
     })
 
 
