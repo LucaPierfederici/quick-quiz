@@ -15,6 +15,19 @@
     },
     {
       "answers": [
+        "Normalmente, il processo figlio, una volta terminata la sua computazione, attende, con una chiamata alla syscall wait, che il padre termini e gli restituisca il suo exit status",
+        "Un processo diventa zombie se termina prima di almeno uno dei processi che abbia eventualmente creato",
+        "Ogni processo pu\u00f2 conoscere il proprio PID, ma non quello del processo che l'ha creato",
+        "Con l'eccezione del primo processo, tutti i processi sono creati con una fork effettuata da un altro processo in esecuzione"
+      ],
+      "correct": {
+        "index": 3
+      },
+      "number": 2,
+      "prompt": "Quale delle seguenti affermazioni sui processi Linux e' vera?"
+    },
+    {
+      "answers": [
         "Digitare un comando sulla shell genera sempre un nuovo processo",
         "Esistono file che non possono essere eseguiti per diventare processi",
         "Affinch\u00e9 un file possa diventare un processo e' necessario che abbia i permessi di esecuzione",
@@ -38,6 +51,19 @@
       },
       "number": 4,
       "prompt": "Quale delle seguenti affermazioni sui processi Linux e' vera?"
+    },
+    {
+      "answers": [
+        "Rappresenta le stringhe ESCLUSIVAMENTE come array di caratteri terminate dal carattere ‘\n’",
+        "Rappresenta le stringhe ESCLUSIVAMENTE come array di caratteri terminate dal carattere ‘^M’",
+        "Rappresenta le stringhe ESCLUSIVAMENTE come array di caratteri terminate dal carattere ‘0’",
+        "Rappresenta le stringhe come array di caratteri terminate dal carattere '\\0'"
+      ],
+      "correct": {
+        "index": 3
+      },
+      "number": 5,
+      "prompt": "Un programma scritto in linguaggio C:"
     },
     {
       "answers": [
@@ -145,6 +171,32 @@
     },
     {
       "answers": [
+        "Informatica9000$",
+        "^Informatica900$",
+        "Informatica9[0^3]",
+        "[^IKU]nformatica"
+      ],
+      "correct": {
+        "index": 1
+      },
+      "number": 14,
+      "prompt": "La stringa Informatica9000 ha un match con la seguente REGEX:"
+    },
+    {
+      "answers": [
+        "int fd = open(\"file_esistente.txt\", O_RDONLY); lseek(fd, -100, SEEK_END); long pos = lseek(fd, 0, SEEK_END);",
+        "int fd = open(\"file_esistente.txt\", O_RDONLY); lseek(fd, -100, SEEK_END); long pos = lseek(fd, 0, SEEK_CUR);",
+        "int fd = open(\"file_esistente.txt\", O_RDONLY); lseek(fd, -100, SEEK_END); long pos = lseek(fd, -100, SEEK_END);",
+        "int fd = open(\"file_esistente.txt\", O_RDONLY); lseek(fd, -100, SEEK_END); long pos = ltell(fd);"
+      ],
+      "correct": {
+        "index": 1
+      },
+      "number": 15,
+      "prompt": "Si supponga di avere il seguente frammento di codice: FILE *stream = fopen(\"file_esistente.txt\", \"r\"); fseek(stream, -100, SEEK_END); long pos = ftell(stream); Quale dei seguenti frammenti di codice ha lo stesso effetto?"
+    },
+    {
+      "answers": [
         "Il comando cat stringa pu\u00f2 essere usato per scrivere stringa su stdout",
         "Eseguendo il comando echo 'date' viene stampata la data e l'ora corrente (secondo l'orologio di sistem  -",
         "Il comando man cmd restituisce in sequenza tutte le pagine di manuale per il comando cmd contenute nelle varie sezioni del manuale",
@@ -168,6 +220,32 @@
       },
       "number": 17,
       "prompt": "Quale dei seguenti frammenti di codice e' corretto?"
+    },
+    {
+      "answers": [
+        "Nessuna delle opzioni e' vera",
+        "E' l’acronimo per Internal Field Splitting",
+        "Rappresenta una variabile contenente la sequenza di tutti i caratteri utilizzati per la separazione in parole (word splitting)",
+        "Rappresenta il carattere utilizzato per la separazione in parole (word splitting)"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 18,
+      "prompt": "Relativamente alla programmazione bash, la variabile IFS:"
+    },
+    {
+      "answers": [
+        "Richiede che i programmi siano sempre scritti in file con estensione .c",
+        "Nasce per risolvere le ambiguità e i problemi di portabilità su architetture diverse di cui soffrono gli altri linguaggi di programmazione finora noti",
+        "E' stato definito come linguaggio Open Source da Dennis Ritchie",
+        "E' stato definito presso i laboratori di ricerca di una compagnia telefonica americana"
+      ],
+      "correct": {
+        "index": 3
+      },
+      "number": 19,
+      "prompt": "Il linguaggio C:"
     },
     {
       "answers": [
@@ -195,6 +273,19 @@
       "number": 21,
       "prompt": "Quale dei seguenti sistemi operativi non e' un antenato di Linux?"
     },
+    {
+      "answers": [
+        "Nessuna delle altre opzioni e' vera",
+        "L'azione non e' specificata correttamente, quindi la bash restituirà un messaggio d'errore",
+        "Il comando stampa su schermo tutte le directory il cui nome comincia con Doc e che siano state modificate più recentemente della directory Documenti",
+        "Il comando modifica tutti i tempi (atime, mtime e ctime) di tutte le directory il cui nome comincia con Doc e che siano state modificate più recentemente della directory Documenti"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 22,
+      "prompt": "Si consideri il comando: find Doc* \\( -name 'Doc*' -a -type d \\) -o -newer Documenti -exec touch '{}' \\;"
+    }, 
     {
       "answers": [
         "Ritorna 2 valori diversi a seconda che si tratti del processo padre o del processo figlio",
@@ -392,6 +483,20 @@
     },
     {
       "answers": [
+        "Può contenere solo file regolari e altre directory",
+        "Non può mai contenere degli hard link",
+        "Nessuna delle opzioni e' vera",
+        "Ha sempre una directory padre, eventualmente corrisponde a se stessa"
+      ],
+      "correct": {
+        "index": 3
+      },
+      "number": 38,
+      "prompt": "Una directory di un filesystem:"
+    },
+  
+    {
+      "answers": [
         "La syscall chdir ha l'effetto di cambiare l'esecuzione delle sole chiamate ad open che usano path relativi come primo argomento",
         "La syscall chdir(path) ha lo stesso effetto del comando bash cd path lanciato in una sottoshell",
         "La syscall rename(oldpath, newpath) ha lo stesso effetto del comando bash cp oldpath newpath",
@@ -444,6 +549,21 @@
     },
     {
       "answers": [
+        "utilizzare congiuntamente i comandi sort e uniq",
+        "utilizzare congiuntamente i comandi cat e grep",
+        "utilizzare il comando uniq con opzione -u",
+        "utilizzare il comando uniq"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 43,
+      "prompt": "Per eliminare tutte le linee duplicate in un file di testo (senza preoccuparsi dell'ordinamento delle righe) occorre:"
+    },
+ 
+
+    {
+      "answers": [
         "Usando la syscall pipe, vengono automaticamente aperti 2 file descriptor",
         "Nessuna delle altre opzioni e' vera",
         "Per usare le named pipes, e' sempre necessario chiamare la syscall mkfifo",
@@ -468,6 +588,20 @@
       "number": 45,
       "prompt": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files e' falsa?"
     },
+    {
+      "answers": [
+        "Sono file di testo composti da sequenze di linee che possono essere del tipo N azione, dove N e' il numero di linea del file in ingresso che sed sta processando ed azione e' un comando Unix da eseguire sulla linea N",
+        "Nessuna delle altre opzioni e' vera",
+        "Sono script (es: bash) al cui interno viene invocato il comando sed",
+        "Sono file di testo composti da sequenze di linee del tipo condizione azione, dove la condizione puo' essere, ad esempio, un numero di linea o una espressione regolare"
+      ],
+      "correct": {
+        "index": 3
+      },
+      "number": 46,
+      "prompt": "Gli script sed:"
+    },
+  
     {
       "answers": [
         "I comandi od file e cat file non possono mai dare lo stesso risultato",
@@ -628,13 +762,27 @@
       "answers": [
         "Linux e' multiutente, perch\u00e9 definisce pi\u00f9 utenti, di cui per\u00f2 uno solo pu\u00f2 essere loggato su una data macchina",
         "Linux e' multiutente, perche' permette a piu' utenti contemporaneamente di essere loggati",
-        "Linux e' multiprocesso, perch\u00e9 permette a pi\u00f9 utenti contemporaneamente di essere loggati sulla stessa macchina"
+        "Linux e' multiprocesso, perch\u00e9 permette a pi\u00f9 utenti contemporaneamente di essere loggati sulla stessa macchina",
+        "Linux e' multiprocesso, perch\u00e9 pu\u00f2 essere usato su una macchina con pi\u00f9 processori"
       ],
       "correct": {
         "index": 1
       },
       "number": 59,
       "prompt": "Quale delle seguenti affermazioni e' vera?"
+    },
+    {
+      "answers": [
+        "e' incompatibile con i Sistemi Operativi della famiglia Windows",
+        "Nessuna delle altre opzioni e' vera",
+        "e' un linguaggio strutturato e compilato",
+        "e' un linguaggio non strutturato e compilato"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 60,
+      "prompt": "Il linguaggio C:"
     },
     {
       "answers": [
@@ -739,6 +887,19 @@
       },
       "number": 68,
       "prompt": "Si supponga di voler vedere, per tutti i processi dell'utente utente, il suo PID, il suo PPID, il comando usato per lanciare il processo (con tutti gli argomenti), la usa occupazione totale di memoria in kB e la sua attuale occupazione di memoria in RAM (senza considerare quindi la parte eventualmente swappata su disco), sempre in kB. Quale dei seguenti comandi e' quello corretto?"
+    },
+    {
+      "answers": [
+        "e' composta da caratteri literal e caratteri di punteggiatura",
+        "Non può essere formata da soli caratteri non literal",
+        "Descrive implicitamente un insieme di stringhe che hanno almeno un match con se stessa",
+        "Non può essere formata da soli caratteri literal"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 69,
+      "prompt": "Una espressione regolare:"
     },
     {
       "answers": [
@@ -947,6 +1108,19 @@
       },
       "number": 85,
       "prompt": "Quale delle seguenti affermazioni \u00e8 falsa?"
+    },
+    {
+      "answers": [
+        "Viene definito per la creazione del primo Sistema Operativo Unix",
+        "Nasce negli anni 70 per sviluppare programmi portabili su diverse architetture hardware",
+        "Nasce come linguaggio di programmazione proprietario per l'implementazione dei programmi sui sistemi DEC PDP-11",
+        "Nasce negli anni 70 come evoluzione del linguaggio B"
+      ],
+      "correct": {
+        "index": 3
+      },
+      "number": 86,
+      "prompt": "Il linguaggio C:"
     },
     {
       "answers": [

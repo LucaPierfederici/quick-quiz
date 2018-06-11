@@ -7,8 +7,7 @@
   - Ogni processo puo' conoscere il suo PID
 
 2)Quale delle seguenti affermazioni sui processi Linux e' vera?
-  - Normalmente, il processo figlio, una volta terminata la sua computazione, attende, con una chiamata alla syscall wait, che il padre termini e gli restituisca il suo exit
-status
+  - Normalmente, il processo figlio, una volta terminata la sua computazione, attende, con una chiamata alla syscall wait, che il padre termini e gli restituisca il suo exit status
   - Un processo diventa zombie se termina prima di almeno uno dei processi che abbia eventualmente creato
   - Ogni processo può conoscere il proprio PID, ma non quello del processo che l'ha creato
   * Con l'eccezione del primo processo, tutti i processi sono creati con una fork effettuata da un altro processo in esecuzione
@@ -85,8 +84,7 @@ status
   - Informatica9[0^3]
   - [^IKU]nformatica
 
-15)Si supponga di avere il seguente frammento di codice: FILE *stream = fopen("file_esistente.txt", "r"); fseek(stream, -100, SEEK_END); long pos = ftell(stream);
-Quale dei seguenti frammenti di codice ha lo stesso effetto?
+15)Si supponga di avere il seguente frammento di codice: FILE *stream = fopen("file_esistente.txt", "r"); fseek(stream, -100, SEEK_END); long pos = ftell(stream); Quale dei seguenti frammenti di codice ha lo stesso effetto?
   - int fd = open("file_esistente.txt", O_RDONLY); lseek(fd, -100, SEEK_END); long pos = lseek(fd, 0, SEEK_END);
   * int fd = open("file_esistente.txt", O_RDONLY); lseek(fd, -100, SEEK_END); long pos = lseek(fd, 0, SEEK_CUR);
   - int fd = open("file_esistente.txt", O_RDONLY); lseek(fd, -100, SEEK_END); long pos = lseek(fd, -100, SEEK_END);
@@ -354,8 +352,7 @@ Quale dei seguenti frammenti di codice ha lo stesso effetto?
   - Linux e' multiutente, perché definisce più utenti, di cui però uno solo può essere loggato su una data macchina
   * Linux e' multiutente, perche' permette a piu' utenti contemporaneamente di essere loggati 
   - Linux e' multiprocesso, perché permette a più utenti contemporaneamente di essere loggati sulla stessa macchina
-  - Linux e' multiprocesso, perché può essere usato su una macchina con più
-processori
+  - Linux e' multiprocesso, perché può essere usato su una macchina con più processori
 
 60)Il linguaggio C:
   - e' incompatibile con i Sistemi Operativi della famiglia Windows
