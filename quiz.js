@@ -3,7 +3,6 @@
 */
 
 ;(function($) {
-var _ = require('https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js');
 // keep track of number of quizes added to page
 var quiz_count = 0;
 
@@ -26,7 +25,8 @@ function render(quiz_opts) {
 
   // list of questions to insert into quiz
   var questions = quiz_opts.questions;
-  console.log(_.sampleSize(questions, 40));
+  console.log(getRandom(questions, 40));
+  
   // keep track of the state of correct
   // answers to the quiz so far
   var state = {
@@ -354,3 +354,15 @@ function facebook(state, opts) {
 
 })(jQuery);
 
+function getRandom(arr, n) {
+  var result = new Array(n),
+      len = arr.length,
+      rlen = 0;
+
+  while (n--) {
+      var x = Math.floor(Math.random() * len-rlen);
+      result[n] = arr.splice(x, 1)[0];
+      rlen++;
+  }
+  return result;
+}
