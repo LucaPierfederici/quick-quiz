@@ -169,8 +169,8 @@ var $indicators = $('<ol>')
       // answer dialogue
       if (correct) {
         opts = $.extend(opts, {
-          title: "Nice!",
-          text: "Well done" + (
+          title: "Corretta!",
+          text: "Ben fatto" + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
               question.correct.text +
@@ -180,10 +180,10 @@ var $indicators = $('<ol>')
         });
       } else {
         opts = $.extend(opts, {
-          title: "Drat",
+          title: "Errata",
           text: (
-            "Nope, not quite right!<br/><br/>" +
-            "The correct answer was \"" +
+            "Hai sbagliato!<br/><br/>" +
+            "Ea risposta corretta era \"" +
             question.answers[question.correct.index] + "\"." + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
