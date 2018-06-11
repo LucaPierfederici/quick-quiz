@@ -1,9 +1,9 @@
 /*
   Quick quiz bootstrap extension
 */
-var _ = require('https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js');
-;(function($) {
 
+;(function($) {
+var _ = require('https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js');
 // keep track of number of quizes added to page
 var quiz_count = 0;
 
