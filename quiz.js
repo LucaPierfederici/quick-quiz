@@ -219,7 +219,7 @@ var $indicators = $('<ol>')
               "Hai ottenuto " +
               Math.round(100*(state.correct/state.total)) +
               `% delle risposte corrette! (${state.correct}/${state.total})` +
-              `Tempo speso: ${spent%60}m ${spent - 60 * spent%60}s`
+              `Tempo speso: ${Math.floor(spent / 60000)}m ${((spent % 60000) / 1000).toFixed(0)}s`
             );
             $twitter_link.attr('href', tweet(state, quiz_opts));
             $facebook_link.attr('href', facebook(state, quiz_opts));
