@@ -169,21 +169,11 @@ html, body {
 }
 
 
-
-.sweet-alert {
-      margin-top: -251px !important;
-      position: absolute;
-  }
-
-
 @media (max-width: 540px){
 .quiz-question{
   font-size: 20px;
 }
-.sweet-alert {
-      margin-top: -251px !important;
-      position: absolute;
-  }
+
 .sweet-alert h2{
   display: none;
 }
