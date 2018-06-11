@@ -177,7 +177,7 @@
         "[^IKU]nformatica"
       ],
       "correct": {
-        "index": 1
+        "index": 0
       },
       "number": 14,
       "prompt": "La stringa Informatica9000 ha un match con la seguente REGEX:"
