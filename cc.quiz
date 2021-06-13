@@ -100,16 +100,19 @@
   - To write in a file; to manage the cryptographic keys; to handle the communication with the data nodes
   - To record changes in a log; to check DataNode liveness; to write in a file
   * To manages the File System Namespace; to controls access to files; to store metadata
+  (image) img/hdfs.png
 
 21)Consider the  Big Table  datastore  architecture  in the  figure. Which among the followings are duties of the Tablet server?
   - To split tablets that have grown too large; to assign tablets to tablet servers; to detect the addition and expiration of tablet servers
   * To manage a set of tablets; to handle read and write requests to the tablets that it has loaded; to split tablets that have grown too large
   - To balance tablet-server load, and garbage collection of files in GFS; to handle schema changes such as table and column family creations; to handle read and write requests
+  (image) img/bigtable.png
 
 22)Consider the Google File  System architecture in the figure. What components (or component) are responsible to handle the file access?
   * Application and chunk server
   - Master and chunk server
   - Application, master and chunk server
+  (image) img/google.png
 
 23)A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which data could be accessed with the key (Row key, column key, timestamp)?
   - cell with the same Row and Column key  stored from the time=0  (creation of the table) to time=timestemp
@@ -215,6 +218,7 @@
   - To balance tablet-server load, and garbage collection of files in GFS
   * To manage a set of tablets
   - To handle schema changes such as table and column family creations.
+  (image) img/bigtable.png
 
 42)BigTable: select one responsibility of the Tablet server
   * To handle read and write requests to the tablets that it has loaded
@@ -230,6 +234,7 @@
   * To assign tablets to tablet servers
   - To handle read and write requests to the tablet servers
   - To identify tablet that have grown too large and that need to be split
+  (image) img/bigtable.png
 
 45)Which is a responsibility of the Master node in Big Table?
   - To identify tablet that have grown too large and that need to be split
