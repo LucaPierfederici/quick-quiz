@@ -165,6 +165,7 @@
       "correct": {
         "index": 2
       },
+      "image": "img/hdfs.png",
       "number": 20,
       "prompt": "Consider the architecture of the HDFS in the figure. Which among the following actions are performed by the NameNode?"
     },
@@ -177,6 +178,7 @@
       "correct": {
         "index": 1
       },
+      "image": "img/bigtable.png",
       "number": 21,
       "prompt": "Consider the  Big Table  datastore  architecture  in the  figure. Which among the followings are duties of the Tablet server?"
     },
@@ -189,6 +191,7 @@
       "correct": {
         "index": 0
       },
+      "image": "img/google.png",
       "number": 22,
       "prompt": "Consider the Google File  System architecture in the figure. What components (or component) are responsible to handle the file access?"
     },
@@ -401,6 +404,7 @@
       "correct": {
         "index": 2
       },
+      "image": "img/bigtable.png",
       "number": 41,
       "prompt": "Consider the Big Table datastore architecture in the figure. Which among the followings is a responsibility of the Tablet server?"
     },
@@ -413,6 +417,7 @@
       "correct": {
         "index": 0
       },
+      "image": "img/bigtable.png",
       "number": 44,
       "prompt": "Consider the Big Table datastore architecture in the figure. Which among the followings are responsibility of the Master node?"
     },
