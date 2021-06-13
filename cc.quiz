@@ -1,0 +1,271 @@
+# Cloud Computing test
+
+1)Which of the following are essential characteristics of cloud computing? (as defined by NIST)
+  - Broad network access; Resource pooling; virtualization
+  * On-demand self-service; Broad network access; and rapid elasticity
+  - Resource pooling; Measured Services; and Scalability
+
+2)Which of  the following is a cloud service model
+  * Infrastructure as a Service
+  - Docker as a Service
+  - Private Cloud
+
+3)Which of the following is a cloud deployment model?
+  * Public cloud
+  - Software as a Service
+  - Cloud Service Broker
+
+4)Which are the business drivers for cloud computing?
+  * Capacity Planning, Cost Reduction, Business Agility
+  - Capacity Planning, Increase of business revenue, Agility
+  - DevOp, Capacity Planning, Increased Security
+
+5)Which type of scalability is facilitated by microservices
+  * Scaling of single functions
+  - Application cloning
+  - Scaling of function’s data
+
+6)Which, among the following definitions describe the MAPE-K cycle
+  * The control loop implemented by an autonomic manager
+  - The  control loop for scaling, load balancing and VMs migration.
+  - The control loop executed by a cloud monitor
+
+7)Suppose that you would like to deploy a web application composed by: a frontend server to receive http requests and produce http reply/answers; a business logic server to build the content of the web pages; a database server, used by the business logic to extract information. Suppose also that the business logic component should scale (horizontally). Which system architectural style/model is the more appropriate for the deployment? Consider the difference between SOA and microservices and specifically the communication mechanisms. What of the following assertion is correct?
+  * Multi-tier client-server architecture model
+  - Microservice architecture model
+  - Service oriented architecture model
+
+8)Consider the difference between SOA and microservices and specifically the communication mechanisms. What of the following assertion is correct?
+  * Microservices uses lightweight and open-source communication mechanisms, while SOA uses heavyweight and often proprietary communication mechanisms
+  - SOA uses lightweight communication mechanisms and microservices uses open source communication mechanisms
+  - Both microservices and  SOA use a message broker. SOA message broker is a  proprietary technology, while the micrroservices  message broker is open source
+
+9)In what differ microservices and the SOA?
+  * Microservices uses lightweight and open-source communication mechanisms, while SOA uses heavyweight and often proprietary communication mechanisms
+  - Both microservices and  SOA use a message broker. SOA message broker is a  proprietary technology, while the micrroservices  message broker is open source
+  - SOA uses lightweight communication mechanisms and microservices uses open source communication mechanisms
+
+10)Why system level virtualization (a.k.a. Hypervisor) increase security?
+  * Because the hypervisor control and filters the execution of privileged instructions invoked by the guest operating system
+  - Because the hypervisor run in user mode
+  - Because the guest operating systems cannot access the physical resources and then cannot do harmful operations
+
+11)What is the difference between hypervisor of type I and hypervisor of type II?
+  * Type I hypervisors run directly on top of the hardware of the host server and Type II hypervisors run on top of the operating system of the host server.
+  - Type I hypervisors use hardware assisted virtualization and type II hypervisors use software assisted virtualization
+  - Type I hypervisors use para-virtualization and type II hypervisors use full virtualization
+
+12)Why the  memory is copied  iteratively?
+  * To make, step-by-step, the dirty portion of the memory, on the VM to be migrated, small enough to handle the final copy
+  - Because usually the memory of a  VMs is too large to be transferred in one shot.
+  - To preserve continuity in the migration process
+
+13)What are the enabling technologies for containers?
+  * Namespaces, cgroups, unionfs
+  - Namespace, access control groups, file union mechanisms
+  - Docker, Kubernetes, Linux
+
+14)Assume that you are deploying a set of containers and that the network stack of the containers should not be isolated from the Docker host.
+  * Host Networks
+  - User-defined bridge networks
+  - Macvlan networks
+
+15)Assume that you are deploying a set of containers on different Docker hosts, and  such containers need to communicate each other. Which network drivers will you use?
+  * Overlay Networks
+  - User-defined bridge networks
+  - Macvlan networks
+
+16)Assume you setup a multi-threshold scale-out policy with two thresholds on the CPU utilization (Ucpu), namely Tcpu1=50% of max CPU utilization and Tcpu2=80% of max CPU utilization. A scaling action start if ( Ucpu > Tcpu1 ) OR ( Ucpu > Tcpu2 ) AND (the threshold is exceeded for more than 300 seconds). Why is important to wait a certain time interval before starting a scaling action?
+  * To avoid ping-pong effects that make the scaling policy unstable
+  - Because 300 secs is the time required by a new instance to start and to join the scaling group
+  - To limit the number of alarms generated in a given time interval, e.g. one hours.
+
+17)Considering the write protocol of the HDFS. Who is in charge of sending the “write successful” acknowledgement to the NameNode?
+  * The client
+  - The primary DataNode involved in the  write operation
+  - The primary DataNode and all the secondary  DataNode involved in the write operation
+
+18)Assume that you are setting up a scalable web server with AWS and  that for your autoscaling group you have configure a step scaling policy. You have decided to set the alarm to start the scale-out with a threshold on the incoming traffic. Which of the following assertions is true
+  * The  alarm  occurs if the average value of the incoming traffic computed over  all the instances in the scaling group exceed the threshold
+  - The alarm occurs if for the majority of the instances in the scaling group the value of the incoming traffic exceeds the threshold (e.g. for 3 out of 5).
+  - The alarm occurs if there is at least an instance in the scaling group with the value of the incoming traffic exceeding the threshold.
+
+19)Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access?
+  * Sequential read
+  - Random read
+  - Random write
+
+20)Consider the architecture of the HDFS in the figure. Which among the following actions are performed by the NameNode?
+  * To manages the File System Namespace; to controls access to files; to store metadata
+  - To write in a file; to manage the cryptographic keys; to handle the communication with the data nodes
+  - To record changes in a log; to check DataNode liveness; to write in a file
+
+21)Consider the  Big Table  datastore  architecture  in the  figure. Which among the followings are duties of the Tablet server?
+  * To manage a set of tablets; to handle read and write requests to the tablets that it has loaded; to split tablets that have grown too large
+  - To split tablets that have grown too large; to assign tablets to tablet servers; to detect the addition and expiration of tablet servers
+  - To balance tablet-server load, and garbage collection of files in GFS; to handle schema changes such as table and column family creations; to handle read and write requests
+
+22)Consider the Google File  System architecture in the figure. What components (or component) are responsible to handle the file access?
+  * Application and chunk server
+  - Master and chunk server
+  - Application, master and chunk server
+
+23)A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which data could be accessed with the key (Row key, column key, timestamp)?
+  * A specific version of a big table cell
+  - cell with the same Row and Column key  stored from the time=0  (creation of the table) to time=timestemp
+  - A family cell
+
+24)A MapReduce computation is usually executed on on large cluster of commodity nodes. Hence, the failure  probability  of the master and worker nodes is very high. In case the master node fails, what action should be taken to preserve the result of  the computation?
+  * The entire MapReduce  computation must  be  restarted
+  - All the the reduce tasks need to be re-scheduled and executed also if some completed
+  - All the the map tasks need to be re-scheduled and executed also if some completed
+
+25)Hadoop MapReduce optimizes data  locality when map tasks are deployed on the Hadoop cluster, that is Hadoop MapReduce try first to run Map tasks on a data local node to not use cluster bandwidth. In case local optimization is not possible, what alternative deployment policies are used?
+  * Rack local deployment
+  - Round-robin deployment
+  - Cluster local deployment
+
+26)What among the following is an RDD transformation?
+  * reduceByKey
+  - collect
+  - reduce
+
+27)Consider the Google File System architecture. What is/are the component/s responsible to create a file?
+  - Application and chunk server
+  - Master and chunk server
+  - Chunk server
+  * The master
+
+28)Why the Google File System uses large chunk?
+  * to optimize performance for large files and to reduce the amount of metadata maintained by the system
+  - To maximize the read and write throughput
+  - To minimize the seek time
+  - To reduce the number of access to the same chunk
+
+29)What is the chunk size in the Google File System?
+  * 64 MegaByte
+  - 128 MegaByte
+  - 1 GigaByte
+  - Configurable from 64Megabyte to 128 Megabyte
+
+30)Researchers and engineers at Google designed the Google File System taking into account the file characteristics. What is the typical range for file size?
+  - Hundreds of Megabyte to few Terabytes
+  - Few Megabyte to hundreds of Gigabytes
+  - Kilobyte to few Gigabytes
+  * Few Gigabyte to hundreds of Terabytes
+
+31)Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access? (multiple answer)
+  - Random read
+  - Random write
+  * Sequential Read
+  - Sequential write
+
+32)What is write operation is preferred in GFS?
+  * Append write
+  - Random write
+  - Low-latency write
+
+33)In what differs the microservices and the SOA?
+  * Communication mechanisms, Data handling, and Size of the services
+  - Communication protocols, data storage solutions, complexity of the service
+  - Communication mechanisms, Data partitioning, Coupling of the services
+
+34)Why system level virtualization (a.k.a. Hypervisor) increase the security?
+  * Because the hypervisor control and filters the execution of privileged instructions invoked by the guest operating system
+  - Because the guest operating systems cannot access the physical resources and then cannot do harmful operations
+  - Because the hypervisor run in privileged mode
+
+35)What is the difference between hypervisor of type I and hypervisor of type II?
+  * Type I hypervisors run directly on top of the hardware of the host server and Type II hypervisors run on top of the operating system of the host server.
+  - Type I hypervisors use hardware assisted virtualization and type II not
+  - Type I hypervisors use paravirtualization and type II hypervisors use full virtualization
+  - Type I hypervisors use binary translation and type II hypervisors use hypercalls
+
+36)Assume that you are deploying a set of containers on different Docker hosts, and such containers need to communicate. What of the following network drivers will you use?
+  - User-defined bridge networks
+  - Host networks
+  * Overlay networks
+  - Macvlan networks
+
+37)Assume that for your autoscaling group you have configure a step scaling policy and that the alarm to start the scale-out is set with a threshold on the incoming traffic. Which of the following assertions is true?
+  * The alarm occurs if the average value of the incoming traffic computed over all the instances in the scaling group exceed the threshold.
+  - The alarm occurs if there is at least an instance in the scaling group with the value of the incoming traffic exceeding the threshold.
+  - The alarm occurs if for the majority of the instances in the scaling group the value of the incoming traffic exceeds the threshold (e.g. for 3 out of 5).
+  - The alarm occurs if for all the instances in the scaling group the value of the incoming traffic exceeds the threshold (e.g. for 3 out of 5)
+
+38)Consider two alarms, associated with an autoscaling policy, that will occur if the CPU utilization exceeds the 50% or 80% and if the threshold is exceeded for more than 300 seconds (as represented in the figure). Why is important to wait a certain time interval before letting the alarm occur?
+  * To avoid ping-pong effects that make the scaling policy unstable.
+  - To avoid over-provisioning or under-provisioning of resources.
+  - To limit the number of alarms generated in a given time interval,   e.g. one hours.
+
+39)Why is important to wait a certain time interval before letting an autoscaling alarm occur?
+  - To avoid over-provisioning or under-provisioning of resources.
+  * To guarantee that the added resources are warm-up
+  - To limit the number of alarms generated in a given time interval,   e.g. one hours.
+
+40)A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which are the key needed to locate a desired cell
+  * Row key, column key and timestamp
+  - Row key, family key and timestamp
+  - Only a row key
+  - Row key and column key
+
+41)Consider the Big Table datastore architecture in the figure. Which among the followings is a responsibility of the Tablet server?
+  * To manage a set of tablets
+  - To assign tablets to tablet servers
+  - To balance tablet-server load, and garbage collection of files in GFS
+  - To handle schema changes such as table and column family creations.
+
+42)BigTable: select one responsibility of the Tablet server
+  * To handle read and write requests to the tablets that it has loaded
+  - To balance tablet-server load, and garbage collection of files in GFS
+  - To handle schema changes such as table and column family creations.
+
+43)BigTable: select one responsibility of the Tablet server
+  * To split tablets that have grown too large
+  - To balance tablet-server load, and garbage collection of files in GFS
+  - To handle schema changes such as table and column family creations.
+
+44)Consider the Big Table datastore architecture in the figure. Which among the followings are responsibility of the Master node?
+  * To assign tablets to tablet servers
+  - To handle read and write requests to the tablet servers
+  - To identify tablet that have grown too large and that need to be split
+
+45)Which is a responsibility of the Master node in Big Table?
+  * To detect the addition and expiration of tablet servers
+  - To identify tablet that have grown too large and that need to be split
+  - To manage the tables in the tablet master key table.
+
+46)Which is a responsibility of the Master node in Big Table?
+  * To balance tablet-server load, and garbage collection of files in GFS.
+  - To identify tablet that have grown too large and that need to be split
+  - To save data in an indexable shared cache among the NFS nodes.
+
+47)Considering the write protocol of the HDFS. Who is in charge of sending the <<write successful>> acknowledgement to the NameNode?
+  * The client
+  - The primary DataNode involved in the write operation
+  - The primary DataNode and all the secondary DataNode involved in the write operation
+  - The NameNode does not need to receive the <<write successful>> acknowledgement because it takes part in the write operation.
+
+48)HDFS: which is a responsability of the NameNode?
+  * store metadata
+  - to write in a file
+  - to handle the communication with the data nodes
+
+49)HDFS: which is another responsability of the NameNode?
+  * check DataNode liveness
+  - to write in a file
+  - to handle the communication with the data nodes
+
+50)What is the key idea behind MapReduce?
+  - Master - Slave algorithm design paradigm
+  - Single Data Multiple Processing algorithm design paradigm
+  - Batch parallel processing
+  - Data Stream processing
+  * Divide and conquer algorithm design paradigm
+
+51)Which is the key operation performed by the MapReduce framework (like Hadoop) that allow to properly execute the Reduce task(s) after the completion of Map tasks?
+  - Combine
+  - There is no need of any specific operation
+  * Shuffle and sort
+  - Shuffle and Combine
+  - Combine and sort
