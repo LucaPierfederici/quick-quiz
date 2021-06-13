@@ -1,15 +1,14 @@
 # Cloud Computing test
 
-1)Which of the following are essential characteristics of cloud computing? (as defined by NIST)
+1)Which of the following are essential characteristics of cloud computing (as defined by NIST)?
   - Broad network access; Resource pooling; virtualization
   * On-demand self-service; Broad network access; and rapid elasticity
   - Resource pooling; Measured Services; and Scalability
 
-2)Which of  the following is a cloud service model
+2)Which of  the following is a cloud service model?
   - Docker as a Service
   - Private Cloud
   * Infrastructure as a Service
-
 
 3)Which of the following is a cloud deployment model?
   - Software as a Service
@@ -21,12 +20,12 @@
   - DevOp, Capacity Planning, Increased Security
   * Capacity Planning, Cost Reduction, Business Agility
 
-5)Which type of scalability is facilitated by microservices
+5)Which type of scalability is facilitated by microservices?
   * Scaling of single functions
   - Application cloning
   - Scaling of function’s data
 
-6)Which, among the following definitions describe the MAPE-K cycle
+6)Which, among the following definitions describe the MAPE-K cycle?
   - The  control loop for scaling, load balancing and VMs migration.
   - The control loop executed by a cloud monitor
   * The control loop implemented by an autonomic manager
@@ -86,7 +85,7 @@
   - The primary DataNode and all the secondary  DataNode involved in the write operation
   * The client
 
-18)Assume that you are setting up a scalable web server with AWS and  that for your autoscaling group you have configure a step scaling policy. You have decided to set the alarm to start the scale-out with a threshold on the incoming traffic. Which of the following assertions is true
+18)Assume that you are setting up a scalable web server with AWS and  that for your autoscaling group you have configure a step scaling policy. You have decided to set the alarm to start the scale-out with a threshold on the incoming traffic. Which of the following assertions is true?
   * The  alarm  occurs if the average value of the incoming traffic computed over  all the instances in the scaling group exceed the threshold
   - The alarm occurs if for the majority of the instances in the scaling group the value of the incoming traffic exceeds the threshold (e.g. for 3 out of 5).
   - The alarm occurs if there is at least an instance in the scaling group with the value of the incoming traffic exceeding the threshold.
@@ -158,7 +157,7 @@
   - Few Megabyte to hundreds of Gigabytes
   - Kilobyte to few Gigabytes
 
-31)Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access? (multiple answer)
+31)Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access?
   - Random read
   - Random write
   * Sequential Read
@@ -207,7 +206,7 @@
   * To guarantee that the added resources are warm-up
   - To limit the number of alarms generated in a given time interval,   e.g. one hours.
 
-40)A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which are the key needed to locate a desired cell
+40)A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which are the key needed to locate a desired cell?
   - Row key, family key and timestamp
   - Only a row key
   * Row key, column key and timestamp
@@ -220,12 +219,12 @@
   - To handle schema changes such as table and column family creations.
   (image) img/bigtable.png
 
-42)BigTable: select one responsibility of the Tablet server
+42)BigTable: select one responsibility of the Tablet server?
   * To handle read and write requests to the tablets that it has loaded
   - To balance tablet-server load, and garbage collection of files in GFS
   - To handle schema changes such as table and column family creations.
 
-43)BigTable: select one responsibility of the Tablet server
+43)BigTable: select one responsibility of the Tablet server?
   - To balance tablet-server load, and garbage collection of files in GFS
   - To handle schema changes such as table and column family creations.
   * To split tablets that have grown too large

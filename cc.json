@@ -2,6 +2,30 @@
   "questions": [
     {
       "answers": [
+        "Broad network access; Resource pooling; virtualization",
+        "On-demand self-service; Broad network access; and rapid elasticity",
+        "Resource pooling; Measured Services; and Scalability"
+      ],
+      "correct": {
+        "index": 1
+      },
+      "number": 1,
+      "prompt": "Which of the following are essential characteristics of cloud computing (as defined by NIST)?"
+    },
+    {
+      "answers": [
+        "Docker as a Service",
+        "Private Cloud",
+        "Infrastructure as a Service"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 2,
+      "prompt": "Which of  the following is a cloud service model?"
+    },
+    {
+      "answers": [
         "Software as a Service",
         "Public cloud",
         "Cloud Service Broker"
@@ -23,6 +47,30 @@
       },
       "number": 4,
       "prompt": "Which are the business drivers for cloud computing?"
+    },
+    {
+      "answers": [
+        "Scaling of single functions",
+        "Application cloning",
+        "Scaling of function\u2019s data"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 5,
+      "prompt": "Which type of scalability is facilitated by microservices?"
+    },
+    {
+      "answers": [
+        "The  control loop for scaling, load balancing and VMs migration.",
+        "The control loop executed by a cloud monitor",
+        "The control loop implemented by an autonomic manager"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 6,
+      "prompt": "Which, among the following definitions describe the MAPE-K cycle?"
     },
     {
       "answers": [
@@ -143,6 +191,18 @@
       },
       "number": 17,
       "prompt": "Considering the write protocol of the HDFS. Who is in charge of sending the \u201cwrite successful\u201d acknowledgement to the NameNode?"
+    },
+    {
+      "answers": [
+        "The  alarm  occurs if the average value of the incoming traffic computed over  all the instances in the scaling group exceed the threshold",
+        "The alarm occurs if for the majority of the instances in the scaling group the value of the incoming traffic exceeds the threshold (e.g. for 3 out of 5).",
+        "The alarm occurs if there is at least an instance in the scaling group with the value of the incoming traffic exceeding the threshold."
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 18,
+      "prompt": "Assume that you are setting up a scalable web server with AWS and  that for your autoscaling group you have configure a step scaling policy. You have decided to set the alarm to start the scale-out with a threshold on the incoming traffic. Which of the following assertions is true?"
     },
     {
       "answers": [
@@ -297,6 +357,19 @@
     },
     {
       "answers": [
+        "Random read",
+        "Random write",
+        "Sequential Read",
+        "Sequential write"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 31,
+      "prompt": "Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access?"
+    },
+    {
+      "answers": [
         "Append write",
         "Random write",
         "Low-latency write"
@@ -396,6 +469,19 @@
     },
     {
       "answers": [
+        "Row key, family key and timestamp",
+        "Only a row key",
+        "Row key, column key and timestamp",
+        "Row key and column key"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 40,
+      "prompt": "A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which are the key needed to locate a desired cell?"
+    },
+    {
+      "answers": [
         "To assign tablets to tablet servers",
         "To balance tablet-server load, and garbage collection of files in GFS",
         "To manage a set of tablets",
@@ -407,6 +493,30 @@
       "image": "img/bigtable.png",
       "number": 41,
       "prompt": "Consider the Big Table datastore architecture in the figure. Which among the followings is a responsibility of the Tablet server?"
+    },
+    {
+      "answers": [
+        "To handle read and write requests to the tablets that it has loaded",
+        "To balance tablet-server load, and garbage collection of files in GFS",
+        "To handle schema changes such as table and column family creations."
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 42,
+      "prompt": "BigTable: select one responsibility of the Tablet server?"
+    },
+    {
+      "answers": [
+        "To balance tablet-server load, and garbage collection of files in GFS",
+        "To handle schema changes such as table and column family creations.",
+        "To split tablets that have grown too large"
+      ],
+      "correct": {
+        "index": 2
+      },
+      "number": 43,
+      "prompt": "BigTable: select one responsibility of the Tablet server?"
     },
     {
       "answers": [
