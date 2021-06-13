@@ -2,36 +2,36 @@
   "questions": [
     {
       "answers": [
-        "Public cloud",
         "Software as a Service",
+        "Public cloud",
         "Cloud Service Broker"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 3,
       "prompt": "Which of the following is a cloud deployment model?"
     },
     {
       "answers": [
-        "Capacity Planning, Cost Reduction, Business Agility",
         "Capacity Planning, Increase of business revenue, Agility",
-        "DevOp, Capacity Planning, Increased Security"
+        "DevOp, Capacity Planning, Increased Security",
+        "Capacity Planning, Cost Reduction, Business Agility"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 4,
       "prompt": "Which are the business drivers for cloud computing?"
     },
     {
       "answers": [
-        "Multi-tier client-server architecture model",
         "Microservice architecture model",
+        "Multi-tier client-server architecture model",
         "Service oriented architecture model"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 7,
       "prompt": "Suppose that you would like to deploy a web application composed by: a frontend server to receive http requests and produce http reply/answers; a business logic server to build the content of the web pages; a database server, used by the business logic to extract information. Suppose also that the business logic component should scale (horizontally). Which system architectural style/model is the more appropriate for the deployment? Consider the difference between SOA and microservices and specifically the communication mechanisms. What of the following assertion is correct?"
@@ -62,60 +62,60 @@
     },
     {
       "answers": [
-        "Because the hypervisor control and filters the execution of privileged instructions invoked by the guest operating system",
         "Because the hypervisor run in user mode",
-        "Because the guest operating systems cannot access the physical resources and then cannot do harmful operations"
+        "Because the guest operating systems cannot access the physical resources and then cannot do harmful operations",
+        "Because the hypervisor control and filters the execution of privileged instructions invoked by the guest operating system"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 10,
       "prompt": "Why system level virtualization (a.k.a. Hypervisor) increase security?"
     },
     {
       "answers": [
-        "Type I hypervisors run directly on top of the hardware of the host server and Type II hypervisors run on top of the operating system of the host server.",
         "Type I hypervisors use hardware assisted virtualization and type II hypervisors use software assisted virtualization",
+        "Type I hypervisors run directly on top of the hardware of the host server and Type II hypervisors run on top of the operating system of the host server.",
         "Type I hypervisors use para-virtualization and type II hypervisors use full virtualization"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 11,
       "prompt": "What is the difference between hypervisor of type I and hypervisor of type II?"
     },
     {
       "answers": [
-        "To make, step-by-step, the dirty portion of the memory, on the VM to be migrated, small enough to handle the final copy",
         "Because usually the memory of a  VMs is too large to be transferred in one shot.",
-        "To preserve continuity in the migration process"
+        "To preserve continuity in the migration process",
+        "To make, step-by-step, the dirty portion of the memory, on the VM to be migrated, small enough to handle the final copy"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 12,
       "prompt": "Why the  memory is copied  iteratively?"
     },
     {
       "answers": [
-        "Namespaces, cgroups, unionfs",
         "Namespace, access control groups, file union mechanisms",
+        "Namespaces, cgroups, unionfs",
         "Docker, Kubernetes, Linux"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 13,
       "prompt": "What are the enabling technologies for containers?"
     },
     {
       "answers": [
-        "Overlay Networks",
         "User-defined bridge networks",
+        "Overlay Networks",
         "Macvlan networks"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 15,
       "prompt": "Assume that you are deploying a set of containers on different Docker hosts, and  such containers need to communicate each other. Which network drivers will you use?"
@@ -134,48 +134,48 @@
     },
     {
       "answers": [
-        "The client",
         "The primary DataNode involved in the  write operation",
-        "The primary DataNode and all the secondary  DataNode involved in the write operation"
+        "The primary DataNode and all the secondary  DataNode involved in the write operation",
+        "The client"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 17,
       "prompt": "Considering the write protocol of the HDFS. Who is in charge of sending the \u201cwrite successful\u201d acknowledgement to the NameNode?"
     },
     {
       "answers": [
-        "Sequential read",
         "Random read",
+        "Sequential read",
         "Random write"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 19,
       "prompt": "Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access?"
     },
     {
       "answers": [
-        "To manages the File System Namespace; to controls access to files; to store metadata",
         "To write in a file; to manage the cryptographic keys; to handle the communication with the data nodes",
-        "To record changes in a log; to check DataNode liveness; to write in a file"
+        "To record changes in a log; to check DataNode liveness; to write in a file",
+        "To manages the File System Namespace; to controls access to files; to store metadata"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 20,
       "prompt": "Consider the architecture of the HDFS in the figure. Which among the following actions are performed by the NameNode?"
     },
     {
       "answers": [
-        "To manage a set of tablets; to handle read and write requests to the tablets that it has loaded; to split tablets that have grown too large",
         "To split tablets that have grown too large; to assign tablets to tablet servers; to detect the addition and expiration of tablet servers",
+        "To manage a set of tablets; to handle read and write requests to the tablets that it has loaded; to split tablets that have grown too large",
         "To balance tablet-server load, and garbage collection of files in GFS; to handle schema changes such as table and column family creations; to handle read and write requests"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 21,
       "prompt": "Consider the  Big Table  datastore  architecture  in the  figure. Which among the followings are duties of the Tablet server?"
@@ -194,12 +194,12 @@
     },
     {
       "answers": [
-        "A specific version of a big table cell",
         "cell with the same Row and Column key  stored from the time=0  (creation of the table) to time=timestemp",
-        "A family cell"
+        "A family cell",
+        "A specific version of a big table cell"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 23,
       "prompt": "A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which data could be accessed with the key (Row key, column key, timestamp)?"
@@ -218,24 +218,24 @@
     },
     {
       "answers": [
-        "Rack local deployment",
         "Round-robin deployment",
-        "Cluster local deployment"
+        "Cluster local deployment",
+        "Rack local deployment"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 25,
       "prompt": "Hadoop MapReduce optimizes data  locality when map tasks are deployed on the Hadoop cluster, that is Hadoop MapReduce try first to run Map tasks on a data local node to not use cluster bandwidth. In case local optimization is not possible, what alternative deployment policies are used?"
     },
     {
       "answers": [
-        "reduceByKey",
         "collect",
+        "reduceByKey",
         "reduce"
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 26,
       "prompt": "What among the following is an RDD transformation?"
@@ -268,13 +268,13 @@
     },
     {
       "answers": [
-        "64 MegaByte",
         "128 MegaByte",
         "1 GigaByte",
+        "64 MegaByte",
         "Configurable from 64Megabyte to 128 Megabyte"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 29,
       "prompt": "What is the chunk size in the Google File System?"
@@ -282,12 +282,12 @@
     {
       "answers": [
         "Hundreds of Megabyte to few Terabytes",
+        "Few Gigabyte to hundreds of Terabytes",
         "Few Megabyte to hundreds of Gigabytes",
-        "Kilobyte to few Gigabytes",
-        "Few Gigabyte to hundreds of Terabytes"
+        "Kilobyte to few Gigabytes"
       ],
       "correct": {
-        "index": 3
+        "index": 1
       },
       "number": 30,
       "prompt": "Researchers and engineers at Google designed the Google File System taking into account the file characteristics. What is the typical range for file size?"
@@ -306,12 +306,12 @@
     },
     {
       "answers": [
-        "Communication mechanisms, Data handling, and Size of the services",
         "Communication protocols, data storage solutions, complexity of the service",
-        "Communication mechanisms, Data partitioning, Coupling of the services"
+        "Communication mechanisms, Data partitioning, Coupling of the services",
+        "Communication mechanisms, Data handling, and Size of the services"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 33,
       "prompt": "In what differs the microservices and the SOA?"
@@ -330,13 +330,13 @@
     },
     {
       "answers": [
-        "Type I hypervisors run directly on top of the hardware of the host server and Type II hypervisors run on top of the operating system of the host server.",
         "Type I hypervisors use hardware assisted virtualization and type II not",
         "Type I hypervisors use paravirtualization and type II hypervisors use full virtualization",
+        "Type I hypervisors run directly on top of the hardware of the host server and Type II hypervisors run on top of the operating system of the host server.",
         "Type I hypervisors use binary translation and type II hypervisors use hypercalls"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 35,
       "prompt": "What is the difference between hypervisor of type I and hypervisor of type II?"
@@ -369,12 +369,12 @@
     },
     {
       "answers": [
-        "To avoid ping-pong effects that make the scaling policy unstable.",
         "To avoid over-provisioning or under-provisioning of resources.",
-        "To limit the number of alarms generated in a given time interval,   e.g. one hours."
+        "To limit the number of alarms generated in a given time interval,   e.g. one hours.",
+        "To avoid ping-pong effects that make the scaling policy unstable."
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 38,
       "prompt": "Consider two alarms, associated with an autoscaling policy, that will occur if the CPU utilization exceeds the 50% or 80% and if the threshold is exceeded for more than 300 seconds (as represented in the figure). Why is important to wait a certain time interval before letting the alarm occur?"
@@ -393,13 +393,13 @@
     },
     {
       "answers": [
-        "To manage a set of tablets",
         "To assign tablets to tablet servers",
         "To balance tablet-server load, and garbage collection of files in GFS",
+        "To manage a set of tablets",
         "To handle schema changes such as table and column family creations."
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 41,
       "prompt": "Consider the Big Table datastore architecture in the figure. Which among the followings is a responsibility of the Tablet server?"
@@ -418,37 +418,37 @@
     },
     {
       "answers": [
-        "To detect the addition and expiration of tablet servers",
         "To identify tablet that have grown too large and that need to be split",
-        "To manage the tables in the tablet master key table."
+        "To manage the tables in the tablet master key table.",
+        "To detect the addition and expiration of tablet servers"
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 45,
       "prompt": "Which is a responsibility of the Master node in Big Table?"
     },
     {
       "answers": [
-        "To balance tablet-server load, and garbage collection of files in GFS.",
         "To identify tablet that have grown too large and that need to be split",
+        "To balance tablet-server load, and garbage collection of files in GFS.",
         "To save data in an indexable shared cache among the NFS nodes."
       ],
       "correct": {
-        "index": 0
+        "index": 1
       },
       "number": 46,
       "prompt": "Which is a responsibility of the Master node in Big Table?"
     },
     {
       "answers": [
-        "The client",
         "The primary DataNode involved in the write operation",
         "The primary DataNode and all the secondary DataNode involved in the write operation",
+        "The client",
         "The NameNode does not need to receive the <<write successful>> acknowledgement because it takes part in the write operation."
       ],
       "correct": {
-        "index": 0
+        "index": 2
       },
       "number": 47,
       "prompt": "Considering the write protocol of the HDFS. Who is in charge of sending the <<write successful>> acknowledgement to the NameNode?"
@@ -481,12 +481,12 @@
       "answers": [
         "Master - Slave algorithm design paradigm",
         "Single Data Multiple Processing algorithm design paradigm",
+        "Divide and conquer algorithm design paradigm",
         "Batch parallel processing",
-        "Data Stream processing",
-        "Divide and conquer algorithm design paradigm"
+        "Data Stream processing"
       ],
       "correct": {
-        "index": 4
+        "index": 2
       },
       "number": 50,
       "prompt": "What is the key idea behind MapReduce?"
@@ -496,10 +496,11 @@
         "Combine",
         "There is no need of any specific operation",
         "Shuffle and sort",
-        "Shuffle and Combine"
+        "Shuffle and Combine",
+        "Shuffle and sort"
       ],
       "correct": {
-        "index": 2
+        "index": 4
       },
       "number": 51,
       "prompt": "Which is the key operation performed by the MapReduce framework (like Hadoop) that allow to properly execute the Reduce task(s) after the completion of Map tasks?"
