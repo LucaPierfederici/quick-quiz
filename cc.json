@@ -158,6 +158,18 @@
     },
     {
       "answers": [
+        "Host Networks",
+        "User-defined bridge networks",
+        "Macvlan networks"
+      ],
+      "correct": {
+        "index": 0
+      },
+      "number": 14,
+      "prompt": "Assume that you are deploying a set of containers and that the network stack of the containers should not be isolated from the Docker host?"
+    },
+    {
+      "answers": [
         "User-defined bridge networks",
         "Overlay Networks",
         "Macvlan networks"

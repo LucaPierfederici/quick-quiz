@@ -65,7 +65,7 @@
   * Namespaces, cgroups, unionfs
   - Docker, Kubernetes, Linux
 
-14)Assume that you are deploying a set of containers and that the network stack of the containers should not be isolated from the Docker host.
+14)Assume that you are deploying a set of containers and that the network stack of the containers should not be isolated from the Docker host?
   * Host Networks
   - User-defined bridge networks
   - Macvlan networks
