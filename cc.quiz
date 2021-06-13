@@ -272,7 +272,6 @@
 51)Which is the key operation performed by the MapReduce framework (like Hadoop) that allow to properly execute the Reduce task(s) after the completion of Map tasks?
   - Combine
   - There is no need of any specific operation
-  * Shuffle and sort
   - Shuffle and Combine
   * Shuffle and sort
   - Combine and sort
