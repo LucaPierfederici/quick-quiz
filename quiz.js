@@ -26,7 +26,7 @@ function render(quiz_opts) {
   // list of questions to insert into quiz
   var questions = quiz_opts.questions;
   var oldDate = new Date();
-  // questions = getRandom(questions, 89);
+  questions = getRandom(questions, questions.length);
   
   // keep track of the state of correct
   // answers to the quiz so far
